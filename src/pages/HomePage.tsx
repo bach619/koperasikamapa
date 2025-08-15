@@ -36,12 +36,12 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <section className="bg-gradient-to-br from-primary-600 to-primary-700 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               Selamat Datang di
-              <span className="block text-yellow-300">KAMAPA</span>
+              <span className="block text-secondary">KAMAPA</span>
             </h1>
             <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
               KAPAKAT MANGGATANG UTUS yang berkomitmen membangun ekonomi kerakyatan 
@@ -50,14 +50,14 @@ const HomePage = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 to="/keanggotaan"
-                className="bg-yellow-400 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-200 flex items-center justify-center"
+                className="bg-secondary text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-secondary-600 transition-colors duration-200 flex items-center justify-center"
               >
                 Bergabung Sekarang
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
                 to="/tentang-kami"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-900 transition-all duration-200"
+                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all duration-200"
               >
                 Pelajari Lebih Lanjut
               </Link>
@@ -82,8 +82,8 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="text-center group hover:shadow-lg p-6 rounded-lg transition-all duration-300">
-                <div className="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-blue-600 transition-colors duration-300">
-                  <feature.icon className="h-8 w-8 text-blue-600 group-hover:text-white transition-colors duration-300" />
+<div className="bg-blue-50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-600 transition-colors duration-300">
+  <feature.icon className="h-8 w-8 text-primary-600 group-hover:text-white transition-colors duration-300" />
                 </div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-3">{feature.title}</h3>
                 <p className="text-gray-600">{feature.description}</p>
@@ -108,8 +108,8 @@ const HomePage = () => {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="text-4xl md:text-5xl font-bold text-blue-600 mb-2">
-                  {stat.number}
+<div className="text-4xl md:text-5xl font-bold text-primary-600 mb-2">
+  {stat.number}
                 </div>
                 <div className="text-gray-600 font-medium">{stat.label}</div>
               </div>
@@ -119,7 +119,7 @@ const HomePage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-green-600 text-white">
+      <section className="py-20 bg-accent text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             Siap Bergabung dengan KAMAPA?
@@ -130,7 +130,7 @@ const HomePage = () => {
           </p>
           <Link
             to="/kontak"
-            className="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center"
+            className="bg-white text-accent px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center"
           >
             Hubungi Kami Sekarang
             <ArrowRight className="ml-2 h-5 w-5" />
