@@ -1,5 +1,6 @@
-import { ArrowRight, Users, TrendingUp, Shield, Award } from 'lucide-react';
+import { Users, TrendingUp, Shield, Award, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 
 const HomePage = () => {
   const features = [
@@ -21,7 +22,7 @@ const HomePage = () => {
     {
       icon: Award,
       title: 'Pelayanan Terbaik',
-      description: 'Komitmen memberikan layanan prima untuk kemajuan ekonomi masyarakat Papua'
+      description: 'Komitmen memberikan layanan prima untuk kemajuan ekonomi masyarakat Kabupaten Gunung Mas'
     }
   ];
 
@@ -35,46 +36,25 @@ const HomePage = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 to-primary-700 text-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Selamat Datang di
-              <span className="block text-secondary">KAMAPA</span>
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed">
-              KAPAKAT MANGGATANG UTUS yang berkomitmen membangun ekonomi kerakyatan 
-              untuk kesejahteraan bersama
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link
-                to="/keanggotaan"
-                className="bg-secondary text-primary-700 px-8 py-3 rounded-lg font-semibold hover:bg-secondary-600 transition-colors duration-200 flex items-center justify-center"
-              >
-                Bergabung Sekarang
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-              <Link
-                to="/tentang-kami"
-                className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-primary-700 transition-all duration-200"
-              >
-                Pelajari Lebih Lanjut
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Hero
+        title="Selamat Datang di Kamapa"
+        subtitle="Kami berkomitmen membangun ekonomi kerakyatan untuk kesejahteraan bersama"
+        primaryButtonText="Bergabung Sekarang"
+        primaryButtonLink="/keanggotaan"
+        secondaryButtonText="Pelajari Lebih Lanjut"
+        secondaryButtonLink="/tentang-kami"
+      />
 
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Mengapa Memilih KAMAPA?
+              Mengapa Memilih Kamapa?
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Kami menyediakan solusi keuangan dan ekonomi yang tepercaya untuk memajukan 
-              kesejahteraan masyarakat Papua
+              kesejahteraan masyarakat Kabupaten Gunung Mas
             </p>
           </div>
 
@@ -121,10 +101,10 @@ const HomePage = () => {
       <section className="py-20 bg-accent text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Siap Bergabung dengan KAMAPA?
+            Siap Bergabung dengan Kamapa?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Wujudkan impian ekonomi yang lebih baik bersama koperasi terpercaya di Papua. 
+            Wujudkan impian ekonomi yang lebih baik bersama koperasi terpercaya di Kabupaten Gunung Mas. 
             Mari bergabung dan rasakan manfaatnya!
           </p>
           <Link

@@ -84,7 +84,7 @@ const MembershipPage = () => {
   const requirements = [
     'Warga Negara Indonesia (WNI)',
     'Berusia minimal 17 tahun',
-    'Berdomisili di Papua atau sekitarnya',
+    'Berdomisili di Kabupaten Gunung Mas atau sekitarnya',
     'Fotokopi KTP yang masih berlaku',
     'Fotokopi Kartu Keluarga (KK)',
     'Pas foto 3x4 sebanyak 2 lembar',
@@ -95,7 +95,7 @@ const MembershipPage = () => {
   const registrationSteps = [
     {
       step: 1,
-      title: 'Kunjungi Kantor KAMAPA',
+      title: 'Kunjungi Kantor Kamapa',
       description: 'Datang ke kantor cabang terdekat dengan membawa dokumen yang diperlukan'
     },
     {
@@ -116,7 +116,7 @@ const MembershipPage = () => {
     {
       step: 5,
       title: 'Aktivasi Akun',
-      description: 'Terima buku anggota dan akses ke layanan digital KAMAPA'
+      description: 'Terima buku anggota dan akses ke layanan digital Kamapa'
     }
   ];
 
@@ -126,7 +126,7 @@ const MembershipPage = () => {
       <section className="bg-gradient-to-br from-purple-600 to-purple-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Keanggotaan KAMAPA</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Keanggotaan Kamapa</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Bergabunglah dengan komunitas koperasi terpercaya dan nikmati berbagai 
               keuntungan eksklusif untuk anggota
@@ -143,7 +143,7 @@ const MembershipPage = () => {
               Keuntungan Menjadi Anggota
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Berbagai benefit eksklusif yang bisa Anda dapatkan sebagai anggota KAMAPA
+              Berbagai benefit eksklusif yang bisa Anda dapatkan sebagai anggota Kamapa
             </p>
           </div>
 
@@ -220,7 +220,7 @@ const MembershipPage = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Syarat Keanggotaan</h2>
               <p className="text-gray-600 mb-8">
-                Persyaratan yang harus dipenuhi untuk menjadi anggota KAMAPA:
+                Persyaratan yang harus dipenuhi untuk menjadi anggota Kamapa:
               </p>
               <div className="space-y-4">
                 {requirements.map((requirement, index) => (
@@ -236,7 +236,7 @@ const MembershipPage = () => {
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">Proses Pendaftaran</h2>
               <p className="text-gray-600 mb-8">
-                Langkah-langkah mudah untuk menjadi anggota KAMAPA:
+                Langkah-langkah mudah untuk menjadi anggota Kamapa:
               </p>
               <div className="space-y-6">
                 {registrationSteps.map((step, index) => (
@@ -260,10 +260,10 @@ const MembershipPage = () => {
       <section className="py-20 bg-gradient-to-br from-purple-600 to-purple-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Siap Bergabung dengan KAMAPA?
+            Siap Bergabung dengan Kamapa?
           </h2>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Mulai perjalanan finansial Anda bersama koperasi terpercaya di Papua. 
+            Mulai perjalanan finansial Anda bersama koperasi terpercaya di Kabupaten Gunung Mas. 
             Dapatkan akses ke berbagai layanan dan benefit eksklusif anggota.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

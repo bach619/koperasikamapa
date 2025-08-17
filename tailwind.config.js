@@ -5,10 +5,13 @@ export default {
     extend: {
       colors: {
         primary: {
-          600: '#2563eb', // Biru utama
-          700: '#1d4ed8', // Biru lebih gelap
+          500: '#A47764', // Mocha Mousse base
+          600: '#8A614F', // Mocha Mousse darker
         },
-        secondary: '#f59e0b', // Kuning aksen
+        secondary: {
+          500: '#5C8374', // Sage Green
+          600: '#48685A', // Sage Green darker
+        },
         accent: '#16a34a', // Hijau untuk CTA
         dark: '#111827', // Warna gelap untuk footer
       }

@@ -68,7 +68,7 @@ const MemberPortalPage = () => {
         <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6">Portal Anggota KAMAPA</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6">Portal Anggota Kamapa</h1>
               <p className="text-xl max-w-3xl mx-auto">
                 Akses informasi akun dan layanan khusus anggota dengan mudah dan aman
               </p>
@@ -169,7 +169,7 @@ const MemberPortalPage = () => {
               <div className="mt-8 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
                 <p className="text-sm text-yellow-800">
                   <strong>Keamanan:</strong> Jangan pernah memberikan nomor anggota dan password Anda kepada siapapun. 
-                  KAMAPA tidak akan pernah meminta informasi login melalui email atau telepon.
+                  Kamapa tidak akan pernah meminta informasi login melalui email atau telepon.
                 </p>
               </div>
             </div>

@@ -4,10 +4,10 @@ import { Calendar, User, ArrowRight, Megaphone, Award, TrendingUp } from 'lucide
 const NewsPage = () => {
   const featuredNews = {
     id: 1,
-    title: 'KAMAPA Raih Penghargaan Koperasi Terbaik Papua 2024',
-    excerpt: 'KAPAKAT MANGGATANG UTUS meraih penghargaan bergengsi sebagai Koperasi Terbaik Papua 2024 dari Kementerian Koperasi dan UKM RI.',
+    title: 'Kamapa Raih Penghargaan Koperasi Terbaik Kabupaten Gunung Mas 2024',
+    excerpt: 'KAPAKAT MANGGATANG UTUS meraih penghargaan bergengsi sebagai Koperasi Terbaik Kabupaten Gunung Mas 2024 dari Kementerian Koperasi dan UKM RI.',
     date: '15 Maret 2024',
-    author: 'Tim Redaksi KAMAPA',
+    author: 'Tim Redaksi Kamapa',
     image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
     category: 'Penghargaan'
   };
@@ -15,10 +15,10 @@ const NewsPage = () => {
   const news = [
     {
       id: 2,
-      title: 'Peluncuran Aplikasi Mobile KAMAPA',
-      excerpt: 'Aplikasi mobile KAMAPA kini tersedia di Play Store dan App Store untuk kemudahan akses layanan anggota.',
+      title: 'Peluncuran Aplikasi Mobile Kamapa',
+      excerpt: 'Aplikasi mobile Kamapa kini tersedia di Play Store dan App Store untuk kemudahan akses layanan anggota.',
       date: '10 Maret 2024',
-      author: 'Divisi IT KAMAPA',
+      author: 'Divisi IT Kamapa',
       image: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&w=400',
       category: 'Teknologi'
     },
@@ -36,14 +36,14 @@ const NewsPage = () => {
       title: 'Rapat Anggota Tahunan (RAT) 2024',
       excerpt: 'Undangan untuk seluruh anggota menghadiri Rapat Anggota Tahunan yang akan diselenggarakan pada tanggal 25 Maret 2024.',
       date: '1 Maret 2024',
-      author: 'Sekretariat KAMAPA',
+      author: 'Sekretariat Kamapa',
       image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
       category: 'Pengumuman'
     },
     {
       id: 5,
-      title: 'Kemitraan Strategis dengan Bank Papua',
-      excerpt: 'KAMAPA menjalin kemitraan strategis dengan Bank Papua untuk memperluas akses layanan keuangan anggota.',
+      title: 'Kemitraan Strategis dengan Bank Kalimantan Tengah',
+      excerpt: 'Kamapa menjalin kemitraan strategis dengan Bank Kalimantan Tengah untuk memperluas akses layanan keuangan anggota.',
       date: '28 Februari 2024',
       author: 'Divisi Kemitraan',
       image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -61,7 +61,7 @@ const NewsPage = () => {
     {
       id: 7,
       title: 'Workshop Manajemen Keuangan UMKM',
-      excerpt: 'KAMAPA menyelenggarakan workshop gratis tentang manajemen keuangan untuk pelaku UMKM di Papua.',
+      excerpt: 'Kamapa menyelenggarakan workshop gratis tentang manajemen keuangan untuk pelaku UMKM di Kabupaten Gunung Mas.',
       date: '15 Februari 2024',
       author: 'Divisi Pemberdayaan',
       image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400',
@@ -102,13 +102,13 @@ const NewsPage = () => {
   return (
     <div className="pt-16">
       {/* Header Section */}
-      <section className="bg-gradient-to-br from-orange-600 to-orange-800 text-white py-20">
+      <section className="bg-gradient-to-br from-orange-500 to-orange-700 text-orange-100 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Berita & Informasi</h1>
-            <p className="text-xl max-w-3xl mx-auto">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-orange-50">Berita & Informasi</h1>
+            <p className="text-lg max-w-3xl mx-auto text-orange-200">
               Dapatkan informasi terbaru seputar kegiatan, pengumuman, dan 
-              perkembangan KAMAPA
+              perkembangan Kamapa
             </p>
           </div>
         </div>
@@ -191,7 +191,7 @@ const NewsPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {news.map((article, index) => (
+            {news.map((article) => (
               <div key={article.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <img 
                   src={article.image} 
@@ -241,7 +241,7 @@ const NewsPage = () => {
             <h2 className="text-3xl font-bold mb-4">Dapatkan Update Terbaru</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Berlangganan newsletter kami untuk mendapatkan informasi terbaru 
-              seputar kegiatan dan pengumuman KAMAPA
+              seputar kegiatan dan pengumuman Kamapa
             </p>
             <div className="max-w-md mx-auto flex">
               <input

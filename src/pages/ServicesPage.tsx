@@ -62,7 +62,7 @@ const ServicesPage = () => {
       features: [
         'Mobile Banking',
         'Internet Banking',
-        'Aplikasi KAMAPA',
+        'Aplikasi Kamapa',
         'E-Wallet',
         'Pembayaran Digital'
       ],
@@ -101,7 +101,7 @@ const ServicesPage = () => {
       <section className="bg-gradient-to-br from-green-600 to-green-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Layanan KAMAPA</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Layanan Kamapa</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Berbagai layanan komprehensif untuk mendukung kemajuan ekonomi dan 
               kesejahteraan anggota koperasi
@@ -151,7 +151,7 @@ const ServicesPage = () => {
               Cara Mengakses Layanan
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Proses mudah dan cepat untuk mendapatkan layanan terbaik dari KAMAPA
+              Proses mudah dan cepat untuk mendapatkan layanan terbaik dari Kamapa
             </p>
           </div>
 
@@ -161,7 +161,7 @@ const ServicesPage = () => {
                 1
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Pendaftaran</h3>
-              <p className="text-gray-600 text-sm">Daftar sebagai anggota KAMAPA dengan membawa dokumen yang diperlukan</p>
+              <p className="text-gray-600 text-sm">Daftar sebagai anggota Kamapa dengan membawa dokumen yang diperlukan</p>
             </div>
 
             <div className="text-center">
@@ -185,7 +185,7 @@ const ServicesPage = () => {
                 4
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">Aktivasi</h3>
-              <p className="text-gray-600 text-sm">Layanan diaktivasi setelah verifikasi dan persetujuan dari tim KAMAPA</p>
+              <p className="text-gray-600 text-sm">Layanan diaktivasi setelah verifikasi dan persetujuan dari tim Kamapa</p>
             </div>
           </div>
         </div>

@@ -41,9 +41,8 @@ const ContactPage = () => {
       icon: MapPin,
       title: 'Alamat Kantor Pusat',
       details: [
-        'Jl. Raya Sentani No. 123',
-        'Jayapura, Papua 99351',
-        'Indonesia'
+        'Jl. Trans Kalimantan, Kuala Kurun',
+        'Gunung Mas Kalimantan Tengah'
       ]
     },
     {
@@ -59,9 +58,9 @@ const ContactPage = () => {
       icon: Mail,
       title: 'Email',
       details: [
-        'info@kamapa.co.id',
-        'layanan@kamapa.co.id',
-        'keanggotaan@kamapa.co.id'
+        'info@Kamapa.online',
+        'layanan@kamapa.online',
+        'keanggotaan@kamapa.online'
       ]
     },
     {
@@ -77,22 +76,10 @@ const ContactPage = () => {
 
   const offices = [
     {
-      name: 'Kantor Pusat Jayapura',
-      address: 'Jl. Raya Sentani No. 123, Jayapura',
+      name: 'Kantor Pusat',
+      address: 'Jl. Trans Kalimantan, Kuala Kurun, Gunung Mas Kalimantan Tengah',
       phone: '(0967) 123-4567',
       manager: 'Bpk. Johannes Wamafma'
-    },
-    {
-      name: 'Kantor Cabang Merauke',
-      address: 'Jl. Raya Merauke No. 45, Merauke',
-      phone: '(0971) 234-5678',
-      manager: 'Ibu Maria Rumkorem'
-    },
-    {
-      name: 'Kantor Cabang Sorong',
-      address: 'Jl. Basuki Rahmat No. 67, Sorong',
-      phone: '(0951) 345-6789',
-      manager: 'Bpk. David Kaisiepo'
     }
   ];
 
@@ -114,7 +101,7 @@ const ContactPage = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Hubungi Kami</h1>
             <p className="text-xl max-w-3xl mx-auto">
               Kami siap membantu Anda dengan segala pertanyaan dan kebutuhan 
-              terkait layanan koperasi KAMAPA
+              terkait layanan koperasi Kamapa
             </p>
           </div>
         </div>
@@ -133,7 +120,7 @@ const ContactPage = () => {
                   <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-green-600 mb-2">Pesan Terkirim!</h3>
                   <p className="text-gray-600">
-                    Terima kasih telah menghubungi kami. Tim KAMAPA akan segera merespons pesan Anda.
+                    Terima kasih telah menghubungi kami. Tim Kamapa akan segera merespons pesan Anda.
                   </p>
                 </div>
               ) : (
@@ -289,7 +276,7 @@ const ContactPage = () => {
               Lokasi Kantor
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              KAMAPA melayani Anda melalui jaringan kantor yang tersebar di seluruh Papua
+              Kamapa melayani Anda melalui jaringan kantor yang tersebar di seluruh Kabupaten Gunung Mas, Kalimantan Tengah
             </p>
           </div>
 
@@ -322,7 +309,7 @@ const ContactPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-8">
             <h2 className="text-3xl font-bold text-gray-900 mb-4">Temukan Kami</h2>
-            <p className="text-gray-600">Lokasi kantor pusat KAMAPA di Jayapura, Papua</p>
+            <p className="text-gray-600">Lokasi kantor pusat Kamapa di Kuala Kurun, Gunung Mas</p>
           </div>
           
           <div className="bg-white rounded-lg shadow-lg p-4">
@@ -331,7 +318,7 @@ const ContactPage = () => {
                 <MapPin className="h-12 w-12 text-teal-600 mx-auto mb-4" />
                 <p className="text-gray-600 mb-2">Peta Interaktif akan ditampilkan di sini</p>
                 <p className="text-sm text-gray-500">
-                  Jl. Raya Sentani No. 123, Jayapura, Papua 99351
+                  Jl. Trans Kalimantan, Kuala Kurun, Gunung Mas Kalimantan Tengah
                 </p>
               </div>
             </div>
@@ -347,27 +334,27 @@ const ContactPage = () => {
               Pertanyaan yang Sering Diajukan
             </h2>
             <p className="text-xl text-gray-600">
-              Temukan jawaban untuk pertanyaan-pertanyaan umum seputar KAMAPA
+              Temukan jawaban untuk pertanyaan-pertanyaan umum seputar Kamapa
             </p>
           </div>
 
           <div className="space-y-6">
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">
-                Bagaimana cara menjadi anggota KAMAPA?
+                Bagaimana cara menjadi anggota Kamapa?
               </h3>
               <p className="text-gray-600">
-                Anda dapat mendaftar sebagai anggota dengan datang langsung ke kantor KAMAPA terdekat 
+                Anda dapat mendaftar sebagai anggota dengan datang langsung ke kantor Kamapa terdekat 
                 dengan membawa dokumen yang diperlukan seperti KTP, KK, dan pas foto.
               </p>
             </div>
 
             <div className="bg-gray-50 rounded-lg p-6">
               <h3 className="font-semibold text-gray-900 mb-2">
-                Apa saja layanan yang tersedia di KAMAPA?
+                Apa saja layanan yang tersedia di Kamapa?
               </h3>
               <p className="text-gray-600">
-                KAMAPA menyediakan layanan simpan pinjam, unit usaha, konsultasi bisnis, 
+                Kamapa menyediakan layanan simpan pinjam, unit usaha, konsultasi bisnis, 
                 pelatihan kewirausahaan, dan layanan digital untuk kemudahan anggota.
               </p>
             </div>

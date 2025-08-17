@@ -1,5 +1,5 @@
 import React from 'react';
-import { Target, Eye, Heart, Award, Users, Calendar } from 'lucide-react';
+import { Target, Eye, Heart, Award, Users } from 'lucide-react';
 
 const AboutPage = () => {
   const values = [
@@ -26,9 +26,9 @@ const AboutPage = () => {
   ];
 
   const milestones = [
-    { year: '2009', event: 'Pendirian KAMAPA dengan 50 anggota pendiri' },
+    { year: '2009', event: 'Pendirian Koperasi Kamapa dengan 50 anggota pendiri' },
     { year: '2012', event: 'Pembukaan layanan simpan pinjam pertama' },
-    { year: '2015', event: 'Ekspansi ke 3 kabupaten di Papua' },
+    { year: '2015', event: 'Ekspansi ke 3 kecamatan di Kabupaten Gunung Mas' },
     { year: '2018', event: 'Peluncuran layanan digital dan mobile banking' },
     { year: '2021', event: 'Pencapaian 5,000 anggota aktif' },
     { year: '2024', event: 'Pengembangan program ekonomi digital' }
@@ -40,11 +40,11 @@ const AboutPage = () => {
       <section className="bg-gradient-to-br from-blue-600 to-blue-800 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Tentang KAMAPA</h1>
-            <p className="text-xl max-w-3xl mx-auto">
-              Mengenal lebih dekat KAPAKAT MANGGATANG UTUS yang telah berkembang 
-              selama lebih dari satu dekade
-            </p>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">Tentang </h1>
+      <p className="text-xl max-w-3xl mx-auto">
+        Mengenal lebih dekat KAPAKAT MANGGATANG UTUS yang telah berkembang 
+        sebagai mitra strategis Perhutanan Sosial di Kabupaten Gunung Mas
+      </p>
           </div>
         </div>
       </section>
@@ -54,23 +54,24 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Sejarah KAMAPA</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Sejarah Koperasi Kamapa</h2>
               <p className="text-gray-600 mb-6">
-                KAMAPA (KKAPAKAT MANGGATANG UTUS) didirikan pada tahun 2009 dengan visi 
-                membangun ekonomi kerakyatan yang kuat di tanah Papua. Berawal dari inisiatif 
-                50 anggota pendiri, kami berkomitmen untuk menciptakan wadah ekonomi yang 
-                dapat meningkatkan kesejahteraan masyarakat Papua.
+                Kamapa (KAPAKAT MANGGATANG UTUS) didirikan pada tahun 2009 dengan visi 
+                membangun ekonomi kerakyatan yang berkelanjutan di Kabupaten Gunung Mas. 
+                Sebagai mitra strategis Perhutanan Sosial, kami berkomitmen untuk mengembangkan 
+                usaha non-kayu di wilayah Perhutanan Sosial Kabupaten Gunung Mas.
               </p>
               <p className="text-gray-600 mb-6">
-                Dalam perjalanannya, KAMAPA telah berkembang menjadi salah satu koperasi 
-                terpercaya di Papua dengan lebih dari 5,000 anggota aktif. Kami terus 
-                berinovasi dalam memberikan pelayanan terbaik dan mengembangkan program-program 
-                yang sesuai dengan kebutuhan masyarakat lokal.
+                Kami bekerja sama dengan 33 Kelompok Perhutanan Sosial yang menjadi mitra 
+                strategis dan anggota koperasi. Dalam perjalanannya, Kamapa telah berkembang 
+                menjadi koperasi terpercaya yang terus berinovasi dalam memberikan pelayanan 
+                terbaik dan mengembangkan program-program yang sesuai dengan kebutuhan masyarakat lokal.
               </p>
               <p className="text-gray-600">
-                Saat ini, KAMAPA tidak hanya melayani simpan pinjam, tetapi juga 
-                mengembangkan unit usaha produktif, program pelatihan, dan layanan 
-                konsultasi bisnis untuk mendorong pertumbuhan ekonomi anggota.
+                Saat ini, Kamapa tidak hanya melayani simpan pinjam, tetapi juga mengembangkan 
+                unit usaha produktif berbasis sumber daya hutan non-kayu, program pelatihan 
+                pengelolaan hasil hutan, dan layanan konsultasi bisnis untuk mendorong 
+                pertumbuhan ekonomi anggota dan kelestarian lingkungan.
               </p>
             </div>
             <div className="bg-gray-50 p-8 rounded-lg">
@@ -101,7 +102,7 @@ const AboutPage = () => {
                 <h2 className="text-2xl font-bold text-gray-900">Visi Kami</h2>
               </div>
               <p className="text-gray-700 text-lg leading-relaxed">
-                "Menjadi koperasi terdepan di Papua yang mampu meningkatkan 
+                "Menjadi koperasi terdepan di Kabupaten Gunung Mas yang mampu meningkatkan 
                 kesejahteraan ekonomi anggota melalui pelayanan yang profesional, 
                 inovatif, dan berkelanjutan."
               </p>
@@ -128,7 +129,7 @@ const AboutPage = () => {
                 </li>
                 <li className="flex items-start">
                   <span className="w-2 h-2 bg-green-600 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                  Membangun kemitraan strategis untuk kemajuan ekonomi Papua
+                  Membangun kemitraan strategis untuk kemajuan ekonomi Kabupaten Gunung Mas
                 </li>
               </ul>
             </div>
@@ -141,7 +142,7 @@ const AboutPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Nilai-Nilai KAMAPA
+              Nilai-Nilai Kamapa
             </h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               Nilai-nilai yang menjadi fondasi dalam setiap kegiatan dan pelayanan kami
@@ -170,7 +171,7 @@ const AboutPage = () => {
               Struktur Organisasi
             </h2>
             <p className="text-xl text-gray-600">
-              Tim berpengalaman yang memimpin KAMAPA menuju masa depan yang lebih baik
+              Tim berpengalaman yang memimpin Kamapa menuju masa depan yang lebih baik
             </p>
           </div>
 
@@ -180,7 +181,7 @@ const AboutPage = () => {
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Ketua Pengurus</h3>
               <p className="text-blue-600 font-medium mb-2">Bpk. Johannes Wamafma</p>
               <p className="text-gray-600 text-sm">
-                Memimpin KAMAPA dengan pengalaman 20 tahun di bidang koperasi
+                Memimpin Kamapa dengan pengalaman 20 tahun di bidang koperasi
               </p>
             </div>
 
