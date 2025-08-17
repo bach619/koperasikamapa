@@ -21,7 +21,7 @@ const Header = () => {
 <header className="bg-white shadow-md sticky top-0 z-50">
   {/* Ribbon */}
   <div className="bg-primary-600 text-white text-center py-1 text-sm font-medium">
-    Koperasi Kapakat Manggatang Utus
+    Koperasi Kapakat Manggatang Utus - Gunung Mas
   </div>
   
   {/* Header content */}

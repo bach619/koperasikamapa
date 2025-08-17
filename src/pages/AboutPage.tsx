@@ -1,5 +1,5 @@
-import React from 'react';
 import { Target, Eye, Heart, Award, Users } from 'lucide-react';
+import OrganizationalStructure from '../components/OrganizationalStructure';
 
 const AboutPage = () => {
   const values = [
@@ -174,35 +174,7 @@ const AboutPage = () => {
               Tim berpengalaman yang memimpin Kamapa menuju masa depan yang lebih baik
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Ketua Pengurus</h3>
-              <p className="text-blue-600 font-medium mb-2">Bpk. Johannes Wamafma</p>
-              <p className="text-gray-600 text-sm">
-                Memimpin Kamapa dengan pengalaman 20 tahun di bidang koperasi
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Sekretaris</h3>
-              <p className="text-blue-600 font-medium mb-2">Ibu Maria Rumkorem</p>
-              <p className="text-gray-600 text-sm">
-                Mengelola administrasi dan dokumentasi koperasi dengan profesional
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-lg text-center">
-              <div className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-2">Bendahara</h3>
-              <p className="text-blue-600 font-medium mb-2">Bpk. David Kaisiepo</p>
-              <p className="text-gray-600 text-sm">
-                Mengelola keuangan koperasi dengan transparansi dan akuntabilitas tinggi
-              </p>
-            </div>
-          </div>
+          <OrganizationalStructure />
         </div>
       </section>
     </div>

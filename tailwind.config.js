@@ -14,8 +14,12 @@ export default {
         },
         accent: '#16a34a', // Hijau untuk CTA
         dark: '#111827', // Warna gelap untuk footer
-      }
+      },
+      scrollbar: ['hidden'],
     },
   },
   plugins: [],
+  corePlugins: {
+    // Ensure core plugins are not disabled
+  },
 };
