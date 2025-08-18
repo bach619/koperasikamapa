@@ -9,6 +9,7 @@ const HomePage = () => {
       {/* Hero Section */}
       <div className="snap-start h-screen">
         <Hero
+          title=""
           subtitle="Kami berkomitmen membangun ekonomi kerakyatan masyarakat Perhutanan Sosial untuk kesejahteraan bersama"
           primaryButtonText="Bergabung Sekarang"
           primaryButtonLink="/keanggotaan"
