@@ -5,9 +5,9 @@ import CTASection from '../components/CTASection';
 
 const HomePage = () => {
   return (
-    <div className="snap-y snap-mandatory h-screen overflow-y-auto hide-scrollbar">
+    <div className="md:snap-y md:snap-mandatory overflow-y-auto hide-scrollbar">
       {/* Hero Section */}
-      <div className="snap-start h-screen">
+      <div className="md:snap-start min-h-[80vh] py-12 md:py-0">
         <Hero
           title=""
           subtitle="Kami berkomitmen membangun ekonomi kerakyatan masyarakat Perhutanan Sosial untuk kesejahteraan bersama"
@@ -19,17 +19,17 @@ const HomePage = () => {
       </div>
 
       {/* Why Choose Kamapa Section */}
-      <div className="snap-start h-screen">
+      <div className="md:snap-start min-h-[80vh] py-12 md:py-0">
         <WhyChooseKamapa />
       </div>
 
       {/* Stats Section */}
-      <div className="snap-start h-screen">
+      <div className="md:snap-start min-h-[80vh] py-12 md:py-0">
         <StatsSection />
       </div>
 
       {/* CTA Section */}
-      <div className="snap-start h-screen">
+      <div className="md:snap-start min-h-[80vh] py-12 md:py-0">
         <CTASection />
       </div>
     </div>

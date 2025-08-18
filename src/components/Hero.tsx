@@ -192,7 +192,7 @@ const Hero = ({
 
       {/* Main content with parallax effect */}
       <div className="relative z-20 h-full flex items-center justify-center px-4 sm:px-6 lg:px-8">
-        <div className={`text-center max-w-6xl mx-auto transform transition-all duration-1500 ${
+          <div className={`text-center max-w-6xl mx-auto transform transition-all duration-1500 ${
           isLoaded ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-20 opacity-0 scale-95'
         }`}>
           
@@ -209,13 +209,13 @@ const Hero = ({
           </div>
           
           {/* Dynamic title with typewriter effect */}
-          <div className="relative mb-6 h-32 flex items-center justify-center">
-            <h1 className="text-5xl md:text-7xl lg:text-9xl font-black leading-tight">
+          <div className="relative mb-4 md:mb-6 h-24 md:h-32 flex items-center justify-center">
+            <h1 className="text-4xl md:text-5xl lg:text-7xl xl:text-9xl font-black leading-tight">
               <span className="block bg-gradient-to-r from-amber-300 via-orange-300 to-yellow-300 bg-clip-text text-transparent animate-gradient-x" 
                     style={{ backgroundSize: '200% 200%' }}>
                 {title}
               </span>
-              <span className="block text-2xl md:text-4xl lg:text-5xl mt-2 text-amber-100/80 font-light animate-fade-in-out">
+              <span className="block text-lg md:text-2xl lg:text-3xl xl:text-4xl mt-1 md:mt-2 text-amber-100/80 font-light animate-fade-in-out">
                 {dynamicTexts[textIndex]}
               </span>
             </h1>
@@ -225,7 +225,7 @@ const Hero = ({
           </div>
           
           {/* Subtitle with reveal animation */}
-          <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-amber-100/90 leading-relaxed font-light max-w-4xl mx-auto">
+          <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-10 text-amber-100/90 leading-relaxed font-light max-w-4xl mx-auto px-4">
             <span className="relative">
               {subtitle}
               <div className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-amber-400 to-orange-400 transform scale-x-0 animate-scale-x origin-left" 
@@ -234,10 +234,10 @@ const Hero = ({
           </p>
           
           {/* Interactive buttons with magnetic effect */}
-          <div className="flex flex-col sm:flex-row gap-8 justify-center items-center max-w-2xl mx-auto mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center max-w-2xl mx-auto mb-8 md:mb-12 px-4">
               <Link
                 to={primaryButtonLink}
-                className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 px-8 py-4 md:px-12 md:py-5 rounded-3xl font-bold text-white text-xl transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 shadow-2xl hover:shadow-amber-500/50"
+                className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 px-6 py-3 md:px-8 md:py-4 rounded-2xl md:rounded-3xl font-bold text-white text-base md:text-xl transform hover:scale-110 hover:-translate-y-1 md:hover:-translate-y-2 transition-all duration-300 shadow-xl md:shadow-2xl hover:shadow-amber-500/50 w-full max-w-xs sm:max-w-none"
               >
               {/* Animated background layers */}
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -274,7 +274,7 @@ const Hero = ({
             
             <Link
               to={secondaryButtonLink}
-              className="group relative overflow-hidden border-2 border-amber-400/60 bg-gradient-to-r from-black/20 to-amber-900/20 backdrop-blur-xl text-amber-100 px-8 py-4 md:px-12 md:py-5 rounded-3xl font-bold text-xl hover:border-amber-300 hover:bg-amber-500/10 transition-all duration-300 shadow-lg hover:shadow-amber-400/30"
+                className="group relative overflow-hidden border-2 border-amber-400/60 bg-gradient-to-r from-black/20 to-amber-900/20 backdrop-blur-xl text-amber-100 px-6 py-3 md:px-8 md:py-4 rounded-2xl md:rounded-3xl font-bold text-base md:text-xl hover:border-amber-300 hover:bg-amber-500/10 transition-all duration-300 shadow-md md:shadow-lg hover:shadow-amber-400/30 w-full max-w-xs sm:max-w-none"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-amber-500/5 to-orange-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur opacity-0 group-hover:opacity-70 transition-opacity duration-300" />
@@ -287,7 +287,7 @@ const Hero = ({
           </div>
           
           {/* Interactive stats or features */}
-          <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 max-w-2xl mx-auto px-4">
             {[
               { icon: Stars, label: "AI Powered", value: "100%" },
               { icon: Zap, label: "Lightning Fast", value: "0.1s" },
@@ -295,15 +295,15 @@ const Hero = ({
             ].map((stat, index) => (
               <div 
                 key={index}
-                className="text-center transform hover:scale-110 transition-all duration-300 cursor-pointer"
+                className="text-center transform hover:scale-105 md:hover:scale-110 transition-all duration-300 cursor-pointer"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
-                <div className="relative mb-3 mx-auto w-16 h-16 flex items-center justify-center">
-                  <stat.icon className="w-8 h-8 text-amber-400 animate-pulse" />
+                <div className="relative mb-2 md:mb-3 mx-auto w-12 h-12 md:w-16 md:h-16 flex items-center justify-center">
+                  <stat.icon className="w-6 h-6 md:w-8 md:h-8 text-amber-400 animate-pulse" />
                   <div className="absolute inset-0 bg-amber-400/20 rounded-full animate-ping" />
                 </div>
-                <div className="text-2xl font-bold text-amber-200 mb-1">{stat.value}</div>
-                <div className="text-sm text-amber-300/70 uppercase tracking-wider">{stat.label}</div>
+                <div className="text-xl md:text-2xl font-bold text-amber-200 mb-1">{stat.value}</div>
+                <div className="text-xs md:text-sm text-amber-300/70 uppercase tracking-wider">{stat.label}</div>
               </div>
             ))}
           </div>
