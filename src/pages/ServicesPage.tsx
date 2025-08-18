@@ -536,16 +536,6 @@ const ServicesPage = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-500 to-orange-500 rounded-2xl blur-xl opacity-50 -z-10 group-hover:opacity-70 transition-opacity duration-300" />
               </button>
               
-              <button className="group relative border-2 border-amber-300 text-amber-100 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-amber-300 hover:text-amber-900 transition-all duration-500 backdrop-blur-sm hover:backdrop-blur-lg overflow-hidden">
-                {/* Animated border */}
-                <div className="absolute inset-0 border-2 border-transparent bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0.5 bg-gradient-to-r from-amber-900 to-orange-900 rounded-2xl" />
-                
-                <span className="relative flex items-center justify-center">
-                  <Calculator className="mr-3 h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-                  Download Brosur
-                </span>
-              </button>
             </div>
           </div>
         </div>
@@ -1098,16 +1088,6 @@ const ServicesPage = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-400 to-red-400 rounded-3xl blur-2xl opacity-30 -z-20 group-hover:opacity-50 transition-opacity duration-300" />
             </button>
             
-            <button className="group relative border-3 border-amber-300 text-amber-100 px-12 py-6 rounded-3xl font-black text-xl hover:bg-amber-300 hover:text-amber-900 transition-all duration-500 backdrop-blur-sm hover:backdrop-blur-lg overflow-hidden hover:scale-105 hover:-translate-y-2">
-              {/* Animated border effect */}
-              <div className="absolute inset-0 border-3 border-transparent bg-gradient-to-r from-amber-400 via-orange-400 to-amber-400 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 animate-border-spin" />
-              <div className="absolute inset-1 bg-gradient-to-r from-amber-900/90 to-orange-900/90 rounded-3xl backdrop-blur-lg" />
-              
-              <span className="relative flex items-center justify-center">
-                <Calculator className="mr-3 h-6 w-6 group-hover:rotate-12 group-hover:scale-110 transition-all duration-300" />
-                Download Brosur Lengkap
-              </span>
-            </button>
           </div>
 
           {/* Trust indicators */}
