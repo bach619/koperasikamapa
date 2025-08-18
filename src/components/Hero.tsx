@@ -1,12 +1,4 @@
-// import { Link } from 'react-router-dom'; // Commented out for demo
-interface LinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  to: string;
-  children: React.ReactNode;
-}
-
-const Link = ({ to, className, children, ...props }: LinkProps) => (
-  <a href={to} className={className} {...props}>{children}</a>
-);
+import { Link } from 'react-router-dom';
 
 import { ArrowRight, Zap, Stars, Sparkles, Rocket, Trees } from 'lucide-react';
 import { useState, useEffect } from 'react';
@@ -243,10 +235,10 @@ const Hero = ({
           
           {/* Interactive buttons with magnetic effect */}
           <div className="flex flex-col sm:flex-row gap-8 justify-center items-center max-w-2xl mx-auto mb-12">
-            <Link
-              to={primaryButtonLink}
-              className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 px-8 py-4 md:px-12 md:py-5 rounded-3xl font-bold text-white text-xl transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 shadow-2xl hover:shadow-amber-500/50"
-            >
+              <Link
+                to={primaryButtonLink}
+                className="group relative overflow-hidden bg-gradient-to-r from-amber-500 to-orange-500 px-8 py-4 md:px-12 md:py-5 rounded-3xl font-bold text-white text-xl transform hover:scale-110 hover:-translate-y-2 transition-all duration-300 shadow-2xl hover:shadow-amber-500/50"
+              >
               {/* Animated background layers */}
               <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <div className="absolute inset-0 bg-gradient-to-r from-yellow-300 to-amber-300 opacity-0 group-hover:opacity-50 transition-opacity duration-500" />

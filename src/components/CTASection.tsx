@@ -13,7 +13,7 @@ const CTASection = () => {
           Mari bergabung dan rasakan manfaatnya!
         </p>
         <Link
-          to="/kontak"
+          to="/contact"
           className="bg-white text-accent px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 inline-flex items-center"
         >
           Hubungi Kami Sekarang
