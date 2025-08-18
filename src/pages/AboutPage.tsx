@@ -71,91 +71,7 @@ const FloatingElements = () => {
   );
 };
 
-// Organizational structure component with tabs
-const OrganizationalStructure = () => {
-  const [orgTab, setOrgTab] = useState('pengurus');
-
-  const pengurus = [
-    { name: "Ketua", position: "Pasihan, T. A", icon: Target },
-    { name: "Wakil Ketua", position: "Sagau G. Ranying", icon: Users },
-    { name: "Sekretaris", position: "Bebendi", icon: Award },
-    { name: "Wakil Sekretaris", position: "Sumadi", icon: Heart },
-    { name: "Bendahara", position: "Wartewi Guntar", icon: TrendingUp },
-  ];
-
-  const pengawas = [
-    { name: "Ketua Pengawas", position: "Jhon Millu, S. Hut", icon: Eye },
-    { name: "Sekretaris Pengawas", position: "Yanfrit Friyadi, S. Hut", icon: Sparkles },
-    { name: "Anggota Pengawas", position: "Jaja Unan", icon: Star },
-  ];
-
-  const currentData = orgTab === 'pengurus' ? pengurus : pengawas;
-
-  return (
-    <div className="bg-gradient-to-br from-orange-50 to-amber-50 rounded-3xl p-8 border border-amber-100">
-      {/* Tab Navigation for Organization */}
-      <div className="flex justify-center mb-8">
-        <div className="bg-white rounded-2xl p-2 inline-flex space-x-2 shadow-lg">
-          {[
-            { key: 'pengurus', label: 'Pengurus', icon: Users },
-            { key: 'pengawas', label: 'Pengawas', icon: Eye }
-          ].map((tab) => (
-            <button
-              key={tab.key}
-              onClick={() => setOrgTab(tab.key)}
-              className={`flex items-center px-6 py-3 rounded-xl font-semibold transition-all duration-300 ${
-                orgTab === tab.key
-                  ? 'bg-gradient-to-r from-amber-500 to-orange-500 text-white shadow-lg transform scale-105'
-                  : 'text-amber-700 hover:bg-amber-50'
-              }`}
-            >
-              <tab.icon className="w-5 h-5 mr-2" />
-              {tab.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Organization Members Grid */}
-      <div className={`grid gap-6 transition-all duration-500 ${
-        orgTab === 'pengurus' 
-          ? 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3' 
-          : 'grid-cols-1 md:grid-cols-3'
-      }`}>
-        {currentData.map((member, index) => (
-          <div 
-            key={index}
-            className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-cream-100 group"
-            style={{ animationDelay: `${index * 0.1}s` }}
-          >
-            <div className="w-16 h-16 bg-gradient-to-br from-amber-400 to-orange-400 rounded-full mx-auto mb-4 flex items-center justify-center group-hover:scale-110 group-hover:rotate-12 transition-all duration-300 shadow-lg">
-              <member.icon className="w-8 h-8 text-white" />
-            </div>
-            <h4 className="font-bold text-gray-900 text-center mb-2 group-hover:text-amber-700 transition-colors duration-300">
-              {member.name}
-            </h4>
-            <p className="text-amber-700 text-center text-sm leading-relaxed">
-              {member.position}
-            </p>
-            
-            {/* Decorative line */}
-            <div className="w-12 h-1 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full mx-auto mt-4 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></div>
-          </div>
-        ))}
-      </div>
-
-      {/* Tab Content Info */}
-      <div className="text-center mt-8 p-4 bg-white/50 rounded-2xl backdrop-blur-sm border border-amber-100">
-        <p className="text-amber-800 font-medium">
-          {orgTab === 'pengurus' 
-            ? '👥 Tim Pengurus yang menjalankan operasional harian koperasi'
-            : '👁️ Tim Pengawas yang mengawasi dan mengevaluasi kinerja pengurus'
-          }
-        </p>
-      </div>
-    </div>
-  );
-};
+import OrganizationalStructure from '../components/OrganizationalStructure';
 
 const AboutPage = () => {
   const [activeTab, setActiveTab] = useState('history');
@@ -429,7 +345,7 @@ const AboutPage = () => {
 
       {/* Leadership Section */}
       <section className="py-20 bg-gradient-to-br from-cream-100 to-amber-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-amber-100 to-orange-100 rounded-full mb-6">
               <Users className="w-5 h-5 text-amber-600 mr-2" />
@@ -438,9 +354,9 @@ const AboutPage = () => {
             <h2 className="text-4xl font-black text-gray-900 mb-4">
               Struktur <span className="text-amber-600">Organisasi</span>
             </h2>
-            <p className="text-xl text-gray-600">
+            {/* <p className="text-xl text-gray-600">
               Tim berpengalaman yang memimpin Kamapa menuju masa depan yang lebih baik
-            </p>
+            </p> */}
           </div>
           <OrganizationalStructure />
         </div>
