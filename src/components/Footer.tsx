@@ -74,7 +74,7 @@ const Footer = () => {
 
     <div className="border-t border-gray-800 mt-8 pt-8 text-center">
       <p className="text-gray-400 text-sm">
-        &copy; 2024 Kamapa (Kapakat Mmanggatang Utus). Hak Cipta Dilindungi. Powered by Boby Mihing
+        &copy; 2024 Kamapa (Kapakat Mmanggatang Utus). Powered by Boby Mihing
       </p>
     </div>
   </div>
