@@ -57,7 +57,7 @@ const Header = () => {
         ))}
         <Link
           to="/portal-anggota"
-          className="bg-primary-600 text-white px-2.5 md:px-3.5 py-1.5 rounded-md md:rounded-lg text-xs md:text-sm font-medium hover:bg-primary-700 transition-colors duration-200"
+          className="bg-primary-600 text-white px-2.5 md:px-3.5 py-2 rounded-md md:rounded-lg text-xs md:text-sm font-medium hover:bg-primary-700 transition-colors duration-200 flex items-center"
         >
           Portal Anggota
         </Link>

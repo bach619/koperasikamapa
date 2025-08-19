@@ -207,16 +207,9 @@ const WhyChooseKamapa = () => {
           ))}
         </div>
 
-        {/* Bottom CTA Section - more compact */}
-        <div className={`text-center mt-12 ${animationStart ? 'animate-slide-up' : 'opacity-0'}`} style={{ animationDelay: '1.2s' }}>
-          <div className="inline-flex items-center px-6 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-white font-bold text-base shadow-xl hover:shadow-amber-500/25 transform hover:scale-105 transition-all duration-300 cursor-pointer group">
-            <span>Bergabung Sekarang</span>
-            <Star className="w-5 h-5 ml-2 group-hover:rotate-180 transition-transform duration-500" />
-          </div>
-        </div>
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes float-random {
           0%, 100% { 
             transform: translateY(0px) translateX(0px) rotate(0deg);

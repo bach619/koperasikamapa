@@ -35,7 +35,7 @@ const FloatingShapes = () => {
         />
       ))}
       
-      <style jsx>{`
+      <style>{`
         @keyframes float {
           0% { transform: translateY(0px) rotate(0deg); }
           100% { transform: translateY(-20px) rotate(360deg); }
@@ -225,13 +225,13 @@ const Hero = ({
           </div>
           
           {/* Subtitle with reveal animation */}
-          <p className="text-base md:text-xl lg:text-2xl mb-6 md:mb-10 text-amber-100/90 leading-relaxed font-light max-w-4xl mx-auto px-4">
-            <span className="relative">
-              {subtitle}
-              <div className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-amber-400 to-orange-400 transform scale-x-0 animate-scale-x origin-left" 
-                   style={{ animationDelay: '1s', animationDuration: '1.5s', animationFillMode: 'forwards' }} />
-            </span>
-          </p>
+      <div className="text-base md:text-xl lg:text-2xl mb-6 md:mb-10 text-amber-100/90 leading-relaxed font-light max-w-4xl mx-auto px-4">
+        <span className="relative">
+          {subtitle}
+          <div className="absolute -bottom-2 left-0 w-full h-0.5 bg-gradient-to-r from-amber-400 to-orange-400 transform scale-x-0 animate-scale-x origin-left" 
+               style={{ animationDelay: '1s', animationDuration: '1.5s', animationFillMode: 'forwards' }} />
+        </span>
+      </div>
           
           {/* Interactive buttons with magnetic effect */}
           <div className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center max-w-2xl mx-auto mb-8 md:mb-12 px-4">
@@ -327,7 +327,7 @@ const Hero = ({
       </div>
 
       {/* CSS Animations */}
-      <style jsx>{`
+      <style>{`
         @keyframes gradient-x {
           0%, 100% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }

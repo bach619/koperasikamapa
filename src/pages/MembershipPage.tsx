@@ -1,5 +1,4 @@
-import React from 'react';
-import { CheckCircle, Users, Gift, Shield, TrendingUp, FileText, CreditCard, Clock } from 'lucide-react';
+import { Users, Gift, Shield, TrendingUp, FileText, CreditCard, Clock } from 'lucide-react';
 
 const MembershipPage = () => {
   const benefits = [
@@ -35,51 +34,6 @@ const MembershipPage = () => {
     }
   ];
 
-  const membershipTypes = [
-    {
-      type: 'Anggota Biasa',
-      price: 'Rp 500.000',
-      features: [
-        'Simpanan pokok Rp 100.000',
-        'Simpanan wajib Rp 50.000/bulan',
-        'Akses semua layanan dasar',
-        'Hak suara dalam rapat anggota',
-        'Bagian SHU tahunan',
-        'Asuransi dasar'
-      ],
-      popular: false
-    },
-    {
-      type: 'Anggota Premium',
-      price: 'Rp 2.000.000',
-      features: [
-        'Simpanan pokok Rp 500.000',
-        'Simpanan wajib Rp 200.000/bulan',
-        'Akses semua layanan premium',
-        'Prioritas dalam pelayanan',
-        'Bagian SHU lebih besar',
-        'Asuransi komprehensif',
-        'Konsultasi bisnis gratis',
-        'Akses program investasi khusus'
-      ],
-      popular: true
-    },
-    {
-      type: 'Anggota Korporat',
-      price: 'Rp 10.000.000',
-      features: [
-        'Simpanan pokok Rp 2.000.000',
-        'Simpanan wajib Rp 500.000/bulan',
-        'Layanan korporat lengkap',
-        'Account manager khusus',
-        'Bagian SHU maksimal',
-        'Asuransi grup karyawan',
-        'Program kemitraan bisnis',
-        'Akses semua unit usaha'
-      ],
-      popular: false
-    }
-  ];
 
   const requirements = [
     'Warga Negara Indonesia (WNI)',
@@ -161,56 +115,6 @@ const MembershipPage = () => {
         </div>
       </section>
 
-      {/* Membership Types */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-              Jenis Keanggotaan
-            </h2>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Pilih jenis keanggotaan yang sesuai dengan kebutuhan dan kemampuan Anda
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {membershipTypes.map((membership, index) => (
-              <div key={index} className={`bg-white rounded-lg shadow-lg p-8 relative ${membership.popular ? 'border-4 border-purple-600 transform scale-105' : ''}`}>
-                {membership.popular && (
-                  <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-purple-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                      PALING POPULER
-                    </span>
-                  </div>
-                )}
-                
-                <div className="text-center mb-6">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{membership.type}</h3>
-                  <div className="text-3xl font-bold text-purple-600">{membership.price}</div>
-                  <p className="text-gray-600 text-sm mt-1">Kontribusi awal</p>
-                </div>
-
-                <ul className="space-y-3 mb-8">
-                  {membership.features.map((feature, featureIndex) => (
-                    <li key={featureIndex} className="flex items-start">
-                      <CheckCircle className="h-5 w-5 text-green-500 mt-0.5 mr-3 flex-shrink-0" />
-                      <span className="text-gray-700 text-sm">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-
-                <button className={`w-full py-3 px-4 rounded-lg font-semibold transition-colors duration-200 ${
-                  membership.popular 
-                    ? 'bg-purple-600 text-white hover:bg-purple-700' 
-                    : 'bg-gray-100 text-gray-800 hover:bg-gray-200'
-                }`}>
-                  Pilih {membership.type}
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Requirements Section */}
       <section className="py-20 bg-white">
