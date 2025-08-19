@@ -41,11 +41,11 @@ const Footer = () => {
       <div>
         <h3 className="text-lg font-semibold mb-4">Layanan Kami</h3>
         <ul className="space-y-2">
-          <li><span className="text-gray-300">Simpan Pinjam</span></li>
-          <li><span className="text-gray-300">Unit Usaha</span></li>
-          <li><span className="text-gray-300">Konsultasi Bisnis</span></li>
-          <li><span className="text-gray-300">Pelatihan Koperasi</span></li>
-          <li><span className="text-gray-300">Layanan Digital</span></li>
+          <li><a href="/layanan#simpan-pinjam" className="text-gray-300 hover:text-primary-400 transition-colors">Simpan Pinjam</a></li>
+          <li><a href="/layanan#unit-usaha" className="text-gray-300 hover:text-primary-400 transition-colors">Unit Usaha</a></li>
+          <li><a href="/layanan#konsultasi-bisnis" className="text-gray-300 hover:text-primary-400 transition-colors">Konsultasi Bisnis</a></li>
+          <li><a href="/layanan#pelatihan-koperasi" className="text-gray-300 hover:text-primary-400 transition-colors">Pelatihan Koperasi</a></li>
+          <li><a href="/layanan#layanan-digital" className="text-gray-300 hover:text-primary-400 transition-colors">Layanan Digital</a></li>
         </ul>
       </div>
 
