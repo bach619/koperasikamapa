@@ -58,7 +58,7 @@ const ContactPage = () => {
       icon: Mail,
       title: 'Email',
       details: [
-        'info@Kamapa.online',
+        'info@kamapa.online',
         'layanan@kamapa.online',
         'keanggotaan@kamapa.online'
       ]

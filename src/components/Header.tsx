@@ -21,7 +21,7 @@ const Header = () => {
 <header className="bg-white shadow-md sticky top-0 z-50">
   {/* Ribbon */}
   <div className="bg-primary-600 text-white text-center py-1 text-sm font-medium">
-    Koperasi Kapakat Manggatang Utus - Gunung Mas
+    Koperasi Kapakat Manggatang Panatau - Gunung Mas
   </div>
   
   {/* Header content */}
@@ -36,7 +36,7 @@ const Header = () => {
         />
         <div>
           <h1 className="text-xl md:text-3xl lg:text-5xl font-bold text-gray-900">KAMAPA</h1>
-          <p className="text-[10px] md:text-xs text-gray-600">Koperasi Kapakat Manggatang Utus</p>
+          <p className="text-[10px] md:text-xs text-gray-600">Koperasi Kapakat Manggatang Panatau</p>
         </div>
       </Link>
 

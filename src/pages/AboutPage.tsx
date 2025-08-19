@@ -151,7 +151,7 @@ const AboutPage = () => {
                 KAPAKAT
               </span>
               <span className="block text-3xl md:text-5xl lg:text-6xl mt-2 text-amber-100/90 font-light">
-                MANGGATANG UTUS
+                MANGGATANG PANATAU
               </span>
             </h1>
             
@@ -220,7 +220,7 @@ const AboutPage = () => {
                   
                   <div className="space-y-6 text-gray-700 leading-relaxed">
                     <p className="text-lg">
-                      <strong className="text-amber-700">Kamapa (KAPAKAT MANGGATANG UTUS)</strong> didirikan pada tahun 2009 dengan visi 
+                      <strong className="text-amber-700">Kamapa (KAPAKAT MANGGATANG PANATAU)</strong> didirikan pada tahun 2009 dengan visi 
                       membangun ekonomi kerakyatan yang berkelanjutan di Kabupaten Gunung Mas.
                     </p>
                     <p>

@@ -5,7 +5,7 @@ const NewsPage = () => {
   const featuredNews = {
     id: 1,
     title: 'Kamapa Raih Penghargaan Koperasi Terbaik Kabupaten Gunung Mas 2024',
-    excerpt: 'KAPAKAT MANGGATANG UTUS meraih penghargaan bergengsi sebagai Koperasi Terbaik Kabupaten Gunung Mas 2024 dari Kementerian Koperasi dan UKM RI.',
+    excerpt: 'KAPAKAT MANGGATANG Panatau meraih penghargaan bergengsi sebagai Koperasi Terbaik Kabupaten Gunung Mas 2024 dari Kementerian Koperasi dan UKM RI.',
     date: '15 Maret 2024',
     author: 'Tim Redaksi Kamapa',
     image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
